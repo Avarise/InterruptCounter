@@ -8,6 +8,7 @@
 #include <linux/types.h> /* size_t */
 #include <linux/proc_fs.h>
 #include <linux/fcntl.h>
+#include "../common/interface.h"
 
 MODULE_LICENSE("Dual BSD/GPL"); 
 
@@ -21,4 +22,4 @@ static void hello_exit(void) {
 }
 
 module_init(hello_init); 
-module_exit(hello_exit); 
+module_exit(hello_exit);
